@@ -2,106 +2,103 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Quiz of Walt Disney World</title>
 <link rel="stylesheet" href="css/bootstrap.min.css">
-
+<script src="js/jquery-slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 </head>
 <body>
-<div class="container">
-  <h1>The Quiz of Walt Disney World</h1>
-  <p class="link"><a href="https://en.wikipedia.org/wiki/Walt_Disney_World"> The Walt Disney World Wikepedia page.</a></p>
-    <p> This quiz about<strong> the Walt Disney World.</strong> In this quiz we will ask to you history of Walt Disney Wald and the characteristic of each theme parks!</p>
-</div>
-<div class="container 1">
   <div class="row">
-    <div class="col-sm-5 col-md-5 col-lg-5">
-  <p>How many theme parks in the Walt Disney World?</p>
-  <p>Who is the founder of Walt Disney World</p>
-  </div>
-  </div>
-<div class="container 3">
-  <p> What happen to the Orlando, Florida between 1955 and 1971?</p>
-  </div>
-<div class="container 4">
-  <label> In which year did Walt Diseny World open in Orlando, Florida?
-  <input type="radio" name="year" value"1920"> 1920
-</label>
-</div>
-  <div class="container 4">
-    <label>
-      <input type="radio" name="year" value"1950"> 1950
-    </label>
-  </div>
-
-  <div class="container 4">
-    <label>
-      <input type="radio" name="year" value"1970"> 1970
-    </label>
-  </div>
-
-  <div class="container 4">
-    <label>
-      <input type="radio" name="year" value"1971" > 1971
-    </label>
-  </div>
-  <div claass="container 6">
-      <label> What is the full name of EPCOT?
-      </label>
+  <div class="col-sm-1"></div>
+  <div class="col-sm-6">
+    <h1>The Quiz of Walt Disney World</h1>
+    <div>
+    <a href="https://en.wikipedia.org/wiki/Walt_Disney_World"> The Walt Disney World Wikepedia page.</a>
     </div>
-
-    <div claass="container 6">
-        <label class "full name">
-          <input class="form-check-input" type="checkbox">Expreimental Prototype Community of Tomorrow
-        </label>
+    <div>
+    This quiz about<strong> the Walt Disney World.</strong>
+    </div>
+    <div>
+    In this quiz we will ask to you history of Walt Disney Wald and the characteristic of each theme parks!
+    </div>
+    <form>
+      <div class="form-group">
+        <label for="q1">How many theme parks in the Walt Disney World?</label>
+        <input type="text" name="question1" class="form-control" id="q1">
       </div>
 
-      <div claass="container 6">
-          <label class "full name">
-            <input class="form-check-input" type="checkbox">Exprience Prototype Community of Tomorrow
-          </label>
+      <div class="form-group">
+        <label for="q2">Who is the founder of Walt Disney World?</label>
+        <input type="text" name="question2" class="form-control" id="q2">
+      </div>
+
+      <div class="form-group">
+        <label for="q3">What happen to the Orlando, Florida between 1955 and 1971?</label>
+        <textarea class="form-control" name="question3" rows="5" id="q3"></textarea>
+      </div>
+
+      <label>In which year did Walt Diseny World open in Orlando, Florida?</label>
+      <div class="form-group">
+        <div class="radio">
+          <label><input type="radio" name="q4a" value="1" checked>1920</label>
         </div>
+        <div class="radio">
+          <label><input type="radio" name="q4a" value="2">1950</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="q4a" value="3">1970</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="q4a" value="4">1971</label>
+        </div>
+      </div>
 
-        <div claass="container 6">
-            <label class "full name">
-              <input class="form-check-input" type="checkbox"> Expriemental Protos Commuunity of Today
-            </label>
+      <label>What is the full name of EPCOT?</label>
+        <div class="form-group">
+          <div class="checkbox">
+            <label><input type="checkbox" name="q5a" value="1">Expreimental Prototype Community of Tomorrow</label>
           </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="q5a" value="2">Exprience Prototype Community of Tomorrow</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="q5a" value="3">Expriemental Protos Commuunity of Today</label>
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="q5a" value="4">Express Prototype of Community of Tomorrow</label>
+          </div>
+      </div>
 
-          <div claass="container 6">
-              <label class "full name">
-                <input class="form-check-input" type="checkbox"> Express Prototype of Community of Tomorrow
-              </label>
-            </div>
+      <div class="form-group">
+        <label for="q6">Please choose four theme parks in the Walt Disney World</label>
+        <textarea class="form-control" name="question6" rows="4" id="q6"></textarea>
+      </div>
 
+      <div class="form-group">
+        <label for="q7">Magic Kingdom Animal Kingdom Hollywood Studios EPCOT Islands of adventagure Universal Studios Florida Sea World Orlando</label>
+        <select multiple class="form-control" name="question7" id="q7">
+          <option value="1">Magic Kingdom </option>
+          <option value="2">Animal Kingdom </option>
+          <option value="3">Hollywood Studios</option>
+          <option value="4">EPCOT</option>
+          <option value="5">Islands of adventagure</option>
+          <option value="6">Universal Studios Florida</option>
+          <option value="7">Sea World Orlando</option>
+        </select>
+      </div>
 
+      <div class="form-group">
+        <button type="submit" value="submit" class="btn btn-primary">Submit Answers</button>
+        <button type="button" value="reset" class="btn">Start Over</button>
 
+      </div>
+
+    </form>
   </div>
-<div class="container 5">
-  <p>Please choose four theme parks in the Walt Disney World</p>
-  <p>Magic Kingdom Animal Kingdom Hollywood Studios EPCOT Islands of adventagure Universal Studios Florida Sea World Orlando</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="jquery-slim.min.js"></script>
-<script src="popper.min.js"></script>
-<script src="bootstrap.min.js"></script>
+  <div class="col-sm-3"></div>
+  </div>
 </body>
 </html>
